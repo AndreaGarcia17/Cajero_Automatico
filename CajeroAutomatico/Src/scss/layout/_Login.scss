@@ -1,0 +1,147 @@
+body{
+   background-color: $negro;
+    
+}
+
+
+.contenedor-cajero{
+
+    .header{
+        margin-bottom: 2rem;
+    }
+
+    
+
+
+
+    .ocultar-seccion{
+        display:none;
+    }
+    
+    .header{
+        margin-top: 2rem;
+    }
+    
+    
+    @include tablet{
+        
+        height:100vh; //Hace que el div se expanda al 100% de la ventana gráfica
+    
+    }
+    
+
+   /* .imagen{
+        height: 30rem; //dentro del div de la clase imagen
+        background-image: url(../img/Cajero.jpg);
+        background-size: cover; 
+        background-position: center center; //Para que siempre sin importar la resolución de la ventana, se visualize el centro de la imagen
+        @include tablet{
+            height: auto; //Adquiere el tamaño del div .imagen que al estar contenido en .contenedor-estetica adquiere la altura defina en esta a causa del grid
+
+        }
+ 
+    }     */
+
+    .app{
+        width: 95%;
+        margin:0 auto;
+        padding-top: $separacion/2;
+
+        p{
+            font-size: 2rem;
+            font-weight: $delgada;
+            margin-top:5rem;
+            margin-bottom: 5rem;
+
+         
+        }
+    
+    
+    }
+
+    .seccion{
+        
+        width: 100%;
+   
+
+          
+
+        .campo{
+            margin-bottom: 2rem;
+
+           input{
+               border: none;
+               padding: 2rem 6rem;
+               border-radius: 2rem;
+
+
+           }
+            
+        }
+
+        .submit{
+
+            text-align: center;
+            
+            
+            input{
+
+                background-color: $azul;
+                padding:1rem 1rem;
+                color:$blanco;
+                border:none;
+                cursor:pointer;
+                font-weight: $bold;
+                font-size: 1.5rem;
+                width:95%;
+                @include tablet{
+                    width: auto;
+                }
+            
+                margin-bottom: 2rem;
+                
+            }
+
+           
+        }
+    }
+}
+
+
+
+.alerta{
+    padding:$separacion/2;
+    text-align: center;
+    color:$blanco;
+    width: 100%;
+    display:block;
+
+
+    &.error{
+        background-color: rgb(194,0,0);
+    }
+
+   
+}
+
+
+
+    .pie-form {
+        font-size: 90%;
+        text-align: center;    
+    }
+
+    .pie-form a {   
+        display: block;
+        text-decoration: none;
+        color: #bbe1fa;
+        margin-bottom: 3px;
+        
+         &:hover {
+            color: #0f4c75;
+            cursor:pointer;
+        }
+    }
+
+    
+
