@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automático</title>
+    <link rel="preload" href="build/css/App.css" as="style">
+    <link rel="stylesheet" href="build/css/App.css">
+</head>
+<body>
+    <div class="contenedor-cajero">
+        <!--<div class="imagen"></div>-->
+        <div class="app">
+            <header class="header">  
+                <h1 class="text-center" id="heading">Bienvenido al Servicio <br> de <br> Cajero automático</h1>
+            </header>
+                <div class="seccion" id="administrativo" >
+                <p>Inicie sesión mediante su cuenta organizativa</p>
+
+                <form class="formulario" id="formulario-alerta">
+                    <div class="campo text-center">
+                        <input id="cuenta" type="text" placeholder="Introduzca su cuenta">
+                    </div>
+    
+                    <div class="campo text-center">
+                        <input  id="password-administrativo" type="password" placeholder="Introduza su contraseña">
+                    </div>
+    
+                    <div class="submit">
+                        <input id="iniciar-administrativo" type="submit" value="Iniciar sesión">
+                    </div>
+
+
+                    <div class="pie-form">
+                        <a >¿Perdiste tu contraseña?</a>
+                        <a >¿No tienes Cuenta? Registrate</a>
+                        <a id="ingresar-cliente">¿Eres un cliente? Ingresa como tal</a>
+                    </div>
+                    
+                </form>
+
+            </div> <!--Fin seccion administrativo-->
+
+
+
+            <div class="seccion ocultar-seccion" id="cliente">
+                <p>Introduzca su número de tarjeta y contraseña</p>
+
+            <div class="login">
+                <form class="formulario" id="formulario-alerta2">
+                    <div class="campo text-center">
+                        <input id="numero-tarjeta" type="number" min="0" placeholder="Introduzca su Número de tarjeta" >
+                    </div>
+    
+                    <div class="campo text-center">
+                        <input id="pin" type="password" min="0" placeholder="Introduza su pin">
+                    </div>
+    
+                    <div class="submit">
+                        <input id="iniciar-sesion" type="submit" value="Iniciar sesión">
+                    </div>
+
+                    <div class="pie-form">
+                        <a href=>¿Perdiste tu contraseña?</a>
+                        <a href=>¿No tienes Cuenta? Registrate</a>
+                       <a href=>¿Eres administrador? Ingresa como tal</a>
+                    </div>
+                    
+                </form>
+
+            </div>
+
+            </div><!--Fin seccion cliente-->
+
+        <!--Sección con operaciones a realizar-->
+        <div class="ocultar-seccion seccion" id="contenedor-menu" > 
+
+
+            <h1>¿Qué operación desea realizar?</h1>
+
+        <div id='menu-operaciones'>
+
+           <div class="operacion" id="retirar">
+               <p>Retirar</p>
+
+           </div>
+
+           <div class="operacion">
+               <p>Depositar</p>
+           </div>
+
+           <div class="operacion" id="consultar-saldo">
+               <p>Consultar saldo</p>
+           </div>
+
+           <div class="operacion">
+               <p>Transferir a una cuenta</P>
+           </div>
+               
+           <div class="operacion">
+               <p>Imprimir estado de cuenta</p>
+           </div>
+
+           <div class="operacion">
+               <p>Cambiar pin</p>
+           </div>
+
+
+       </div><!--fin de menu de operaciones-->
+       <div class="contenedor-botton">
+           <botton id="cerrar-sesion">Cerrar sesión</botton>
+       </div>
+
+
+
+
+        </div> <!--Fin contenedor de menu de operaciones-->
+
+        <!-- Seccón de la operación de consultar saldo-->
+
+        <div class="ocultar-seccion" id="seccion-consultar">
+            <h2>Su saldo es:</h2>
+
+           
+           
+
+        </div>
+
+        <div class="ocultar-seccion" id="contenedor-bottonRegresar">
+            <botton id="regresar">regresar</botton>
+        </div>
+
+        <!--Fin de la sección de la operación de consutar saldo-->
+
+
+        <!--Inicio de la sección de la operación de retirar saldo-->
+        <div id="contenedor-retirar" class="ocultar-seccion seccion">
+
+            <h2 id="heading-retirar" >Seleccione una opción</h2>
+        <div  id="menu-retirar">
+
+            <button class="opcion" value="100">$100</button>
+            <button class="opcion" value="500">$500</button>
+            <button class="opcion" value="1000">$1000</button>
+            <button class="opcion" value="1500">$1500</button>
+            <button class="opcion" value="2000">$2000</button>
+            <input id="OtraCantidad-retirar" min="0" type="number" placeholder="Introduzca otra cantidad">
+
+        </div><!--Fin menu-retirar-->
+        
+
+
+        </div><!--Fin contenedor-retirar-->
+        <div class="ocultar-seccion" id="contenedor-aceptar">
+            <botton id="aceptar-retiro">Aceptar</botton>
+        </div>
+        
+
+        <div class="ocultar-seccion" id="contenedor-bottonRetirar">
+            <botton id="regresar-retirar">regresar</botton>
+        </div>
+        
+        <!--Fin sección de la operación de Retirar-->
+
+        </div> <!--Fin .app-->
+        
+    </div><!--Fin .contenedor-cajero-->
+
+    
+
+
+
+
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
