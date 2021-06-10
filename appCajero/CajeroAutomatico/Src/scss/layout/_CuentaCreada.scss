@@ -1,0 +1,41 @@
+#contenedor-aceptar-cuenta{
+    
+    
+    text-align: right;
+    margin-bottom: 5rem;
+    #botton-aceptar{
+
+        
+         &:hover{
+            cursor:pointer;
+            background-color: $base;
+        }
+        border:none;
+        text-transform: uppercase;
+        padding:2rem;
+        color:$blanco;
+        font-weight: $bold;
+        font-size: 1.5rem;
+        width:95%;
+
+       
+    
+    }  
+}
+
+#contenedor-parrafo-cuenta{
+    text-align: center;
+    background-color: $base;
+    padding:$separacion/2;
+    text-align: center;
+    color:$blanco;
+    width: 100%;
+    display:block;
+    margin-bottom: 5rem;
+
+    p{
+        span{
+            font-weight: $bold;
+        }
+    }
+}
